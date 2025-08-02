@@ -9,7 +9,6 @@ This project is fully front-end based, built with **HTML5**, **CSS3**, and **Van
 
 - [Overview](#-overview)
 - [Features](#-features)
-- [Demo Preview](#-demo-preview)
 - [Project Structure](#-project-structure)
 - [Installation & Setup](#-installation--setup)
 - [Usage](#-usage)
@@ -51,16 +50,6 @@ You can host it on:
 - **Smooth Navigation** – Consistent header menu across pages.
 - **Modern Red Theme** – Perfect for creative branding.
 - **Simple to Deploy** – No build tools required.
-
----
-
-## 📸 Demo Preview
-
-> You can replace these placeholders with actual screenshots from your website.
-
-| Home Page | Works Page |
-|-----------|------------|
-| ![Home Page](docs/screenshots/homepage.png) | ![Works Page](docs/screenshots/workspage.png) |
 
 ---
 
