@@ -9,11 +9,11 @@ This project is fully front-end based, built with **HTML5**, **CSS3**, and **Van
 
 - [Overview](#-overview)
 - [Features](#-features)
-- [Project Structure](#-project-structure)
 - [Usage](#-usage)
 - [Customization](#-customization)
 - [Technologies Used](#-technologies-used)
 - [Future Enhancements](#-future-enhancements)
+- [Project Structure](#-project-structure)
 
 ---
 
@@ -48,6 +48,43 @@ You can host it on:
 - **Modern Red Theme** – Perfect for creative branding.
 - **Simple to Deploy** – No build tools required.
 
+
+## 📌 Usage
+- **Home Page** – Displays your agency tagline, call-to-action button (with ripple effect), and a brief introduction.  
+- **About Page** – Describes the agency's background, mission, and values.  
+- **Services Page** – Lists all services offered with short descriptions.  
+- **Works Page** – Showcases past projects with sample images.  
+- **Connect Page** – Provides a contact form with styled input fields and social icons.  
+- **Navigation** – Smooth navigation menu links to each page.  
+- **Responsive Design** – Works seamlessly on desktop, tablet, and mobile devices.  
+
+---
+
+## Customization
+- **Colors** – Change the red brand theme in `style.css` by updating the primary color variable:
+  ```css
+  :root {
+      --primary-color: #e63946; /* Change to your desired color */
+  }
+
+---
+
+## Technologies Used
+- **HTML5** – Semantic and accessible page structure.  
+- **CSS3** – Styling, responsive design, and animations.  
+- **Vanilla JavaScript** – Navigation interactivity and ripple effect.  
+- **Custom Fonts** – Typography styling for a modern brand look.  
+
+---
+
+## Future Enhancements
+- **Contact Form Backend** – Integrate PHP, Node.js, or Firebase to send messages directly from the form.  
+- **Portfolio Filtering** – Allow users to filter works/projects by category.  
+- **Dark Mode** – Add a theme toggle for better accessibility.  
+- **Animations & Transitions** – Smooth fade-ins and scroll animations for sections.  
+- **Blog Section** – Add a blog/news page for updates and articles.  
+- **SEO Optimization** – Improve search visibility with meta tags and structured data.  
+
 ---
 
 ## Project Structure
@@ -76,37 +113,5 @@ pixel/
     │   └── b7.jpg
     └── .DS_Store          # macOS system file
 
-## 📌 Usage
-- **Home Page** – Displays your agency tagline, call-to-action button (with ripple effect), and a brief introduction.  
-- **About Page** – Describes the agency's background, mission, and values.  
-- **Services Page** – Lists all services offered with short descriptions.  
-- **Works Page** – Showcases past projects with sample images.  
-- **Connect Page** – Provides a contact form with styled input fields and social icons.  
-- **Navigation** – Smooth navigation menu links to each page.  
-- **Responsive Design** – Works seamlessly on desktop, tablet, and mobile devices.  
 
----
-
-## Customization
-- **Colors** – Change the red brand theme in `style.css` by updating the primary color variable:
-  ```css
-  :root {
-      --primary-color: #e63946; /* Change to your desired color */
-  }
-
-## Technologies Used
-- **HTML5** – Semantic and accessible page structure.  
-- **CSS3** – Styling, responsive design, and animations.  
-- **Vanilla JavaScript** – Navigation interactivity and ripple effect.  
-- **Custom Fonts** – Typography styling for a modern brand look.  
-
----
-
-## Future Enhancements
-- **Contact Form Backend** – Integrate PHP, Node.js, or Firebase to send messages directly from the form.  
-- **Portfolio Filtering** – Allow users to filter works/projects by category.  
-- **Dark Mode** – Add a theme toggle for better accessibility.  
-- **Animations & Transitions** – Smooth fade-ins and scroll animations for sections.  
-- **Blog Section** – Add a blog/news page for updates and articles.  
-- **SEO Optimization** – Improve search visibility with meta tags and structured data.  
 
