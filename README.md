@@ -15,8 +15,6 @@ This project is fully front-end based, built with **HTML5**, **CSS3**, and **Van
 - [Customization](#-customization)
 - [Technologies Used](#-technologies-used)
 - [Future Enhancements](#-future-enhancements)
-- [License](#-license)
-- [Contact](#-contact)
 
 ---
 
