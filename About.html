@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .about-section {
+      background-color: #fff;
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 3rem;
+      color: #d72638;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .highlight-box {
+      background-color: #f3f3f3;
+      border-left: 5px solid #d72638;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .highlight-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .highlight-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .highlight-text {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .team-section {
+      margin-top: 60px;
+    }
+
+    .team-heading {
+      font-size: 2.5rem;
+      color: #d72638;
+      margin-bottom: 40px;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 8px;
+      justify-items: center;
+    }
+
+    .team-card {
+      background: #fafafa;
+      border-radius: 15px;
+      padding: 30px 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 280px;
+      text-align: center;
+    }
+
+    .team-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .team-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #d72638;
+      margin: 0 auto 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      color: white;
+      font-weight: bold;
+    }
+
+    .team-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .team-role {
+      color: #888;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .team-socials a {
+      margin: 0 6px;
+      color: #d72638;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .team-socials a:hover {
+      color: #333;
+    }
+
+    .cta-button {
+      margin-top: 60px;
+      display: inline-block;
+      padding: 12px 28px;
+      background-color: #d72638;
+      color: white;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #c21f30;
+    }
+
+    @media (max-width: 768px) {
+      .about-section h2,
+      .team-heading {
+        font-size: 2rem;
+      }
+    }
+
+    .team-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+  </style>
+</head>
+<body>
+
+  <section class="about-section">
+    <h2>About Us</h2>
+    <p>We are a passionate team of creatives and technologists focused on delivering impactful digital experiences. From branding to code, we craft with purpose, aiming to elevate brands with design, innovation, and strategy.</p>
+
+    <div class="about-highlights">
+      <div class="highlight-box">
+        <div class="highlight-title">🚀 Our Mission</div>
+        <div class="highlight-text">To create meaningful and lasting connections between brands and their audiences through thoughtful design.</div>
+      </div>
+      <div class="highlight-box">
+        <div class="highlight-title">💡 Our Vision</div>
+        <div class="highlight-text">To be the go-to creative partner for companies seeking transformation and impact.</div>
+      </div>
+      <div class="highlight-box">
+        <div class="highlight-title">🤝 Our Values</div>
+        <div class="highlight-text">Creativity, transparency, collaboration, and a drive for excellence guide our work every day.</div>
+      </div>
+    </div>
+
+    <div class="team-section">
+        <h3 class="team-heading">Our Team</h3>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-img">
+              <img src="fonts/ae31c8133ba753a0fd618a50bf78f56d.jpg" alt="Yash Jadhav" />
+            </div>
+            <div class="team-name">Yash Jadhav</div>
+            <div class="team-role">DOMinator</div>
+            <div class="team-socials">
+              <a href="#">🌐</a>
+              <a href="#">📷</a>
+              <a href="#">🐦</a>
+            </div>
+          </div>
+      
+          <div class="team-card">
+            <div class="team-img">
+              <img src="fonts/img2.jpg" alt="Himanshi Sharma" />
+            </div>
+            <div class="team-name">Himanshi Sharma</div>
+            <div class="team-role">DOMinator</div>
+            <div class="team-socials">
+              <a href="#">🌐</a>
+              <a href="#">📷</a>
+              <a href="#">🐦</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <a href="connect.html" class="cta-button">Let’s Work Together</a>
+  </section>
+
+</body>
+</html>

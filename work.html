@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work Section - Infinite Loop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: white;
+      color: #333;
+    }
+
+    .work-section {
+      padding: 60px 0;
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    .work-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #d72638;
+      margin-bottom: 60px;
+    }
+
+    .marquee-wrapper {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .marquee-content {
+      display: flex;
+      width: fit-content;
+      animation: scroll-left 60s linear infinite;
+    }
+
+    .marquee-row.reverse .marquee-content {
+      /* Corrected animation for a seamless rightward scroll */
+      animation: scroll-right 60s linear infinite;
+    }
+
+    /* Animation for leftward scroll */
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Animation for rightward scroll */
+    @keyframes scroll-right {
+      0% { transform: translateX(-50%); } /* Start with the second set of cards */
+      100% { transform: translateX(0); } /* End with the first set of cards */
+    }
+
+    .work-card {
+      flex: 0 0 auto;
+      width: 300px;
+      height: 200px;
+      margin: 0 10px;
+      background: #eee;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .work-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .work-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .work-card:hover img {
+      transform: scale(1.1);
+    }
+    
+    /* Added spacing between the two rows */
+    .marquee-row.reverse {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .work-card {
+        width: 160px;
+        height: 120px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .work-card {
+        width: 120px;
+        height: 90px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="work-section">
+    <h2>OUR WORK</h2>
+
+    <!-- Row 1: Scrolls Left -->
+    <div class="marquee-wrapper">
+      <div class="marquee-content">
+        <!-- Optimized for performance with loading="lazy" -->
+        <!-- Set 1 -->
+        <div class="work-card"><img src="images/B1.jpg" alt="Work item 1" loading="lazy" /></div>
+        <div class="work-card"><img src="images/B2.jpg" alt="Work item 2" loading="lazy" /></div>
+        <div class="work-card"><img src="images/B3.jpg" alt="Work item 3" loading="lazy" /></div>
+        <div class="work-card"><img src="images/b4.jpg" alt="Work item 4" loading="lazy" /></div>
+        <div class="work-card"><img src="images/b5.jpg" alt="Work item 5" loading="lazy" /></div>
+
+        <!-- Set 2 (Duplicate) - Corrected to ensure a seamless loop -->
+        <div class="work-card"><img src="images/B1.jpg" alt="Work item 1" loading="lazy" /></div>
+        <div class="work-card"><img src="images/B2.jpg" alt="Work item 2" loading="lazy" /></div>
+        <div class="work-card"><img src="images/B3.jpg" alt="Work item 3" loading="lazy" /></div>
+        <div class="work-card"><img src="images/b4.jpg" alt="Work item 4" loading="lazy" /></div>
+        <div class="work-card"><img src="images/b5.jpg" alt="Work item 5" loading="lazy" /></div>
+      </div>
+    </div>
+
+    <!-- Row 2: Scrolls Right -->
+    <div class="marquee-wrapper marquee-row reverse">
+      <div class="marquee-content">
+        <!-- Optimized for performance with loading="lazy" -->
+        <!-- Set 1 -->
+        <div class="work-card"><img src="images/b4.jpg" alt="Work item 6" loading="lazy" /></div>
+        <div class="work-card"><img src="images/b5.jpg" alt="Work item 7" loading="lazy" /></div>
+        <div class="work-card"><img src="images/b6.jpg" alt="Work item 8" loading="lazy" /></div>
+        <div class="work-card"><img src="images/B1.jpg" alt="Work item 9" loading="lazy" /></div>
+        <div class="work-card"><img src="images/B2.jpg" alt="Work item 10" loading="lazy" /></div>
+
+        <!-- Set 2 (Duplicate) - Corrected to ensure a seamless loop -->
+        <div class="work-card"><img src="images/b4.jpg" alt="Work item 6" loading="lazy" /></div>
+        <div class="work-card"><img src="images/b5.jpg" alt="Work item 7" loading="lazy" /></div>
+        <div class="work-card"><img src="images/b6.jpg" alt="Work item 8" loading="lazy" /></div>
+        <div class="work-card"><img src="images/B1.jpg" alt="Work item 9" loading="lazy" /></div>
+        <div class="work-card"><img src="images/B2.jpg" alt="Work item 10" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Select all marquee rows
+      const marquees = document.querySelectorAll('.marquee-wrapper');
+      
+      // Loop through each marquee and add event listeners
+      marquees.forEach(marquee => {
+        // Pause animation on mouseover
+        marquee.addEventListener('mouseover', () => {
+          marquee.querySelector('.marquee-content').style.animationPlayState = 'paused';
+        });
+        // Resume animation on mouseout
+        marquee.addEventListener('mouseout', () => {
+          marquee.querySelector('.marquee-content').style.animationPlayState = 'running';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Agency</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/3fe2d5bdfa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="landing-section">
+    <div class="top-bar">PIXEL AGENCY</div>
+    <div class="menu-button" onclick="toggleMenu()">MENU ☰</div>
+    <h1>STARTING A NEW <br>JOURNEY</h1>
+    <p>Share your idea, and we'll do our best to navigate you <br>through the development process.</p>
+
+    <div class="project-box" type="Input"> 
+      <div><strong style="font-size: 22px;">PROJECT <br><br></strong></div>
+      <p id="typing-text" style="font-size: small; text-align: center;"> &nbsp;&nbsp;&nbsp;</p>
+    </div>
+  </div>
+
+  <div class="menu" id="menu">
+    <div class="menu-header">
+      <h3>We build immersive experiences across platforms — from mobile apps to enterprise solutions.</h3>
+      <div class="menu-close" onclick="toggleMenu()">CLOSE ✕</div>
+    </div>
+    <div class="menu-links">
+      <div><a href="About.html" class="about-link">ABOUT US <span>→</span></a></div>
+      <div><a href="work.html" style="text-decoration: none; color: #000;">WORKS <span>→</span></a></div>
+      <div><a href="#services" style="text-decoration: none; color: #000;">SERVICES <span>→</span></a></div>
+      <div><a href="connect.html" style="text-decoration: none; color: #000;">CONNECT<span>→</span></a></div>
+    </div>
+  </div>
+
+  <section class="agency-section">
+    <h2 class="agency-heading">Welcome to Pixel Agency</h2>
+    <p class="agency-subheading">Crafting exceptional digital experiences, one pixel at a time.</p>
+    <hr class="divider">
+    <div class="agency-content">
+      <p>
+        At Pixel Agency, we are dedicated to transforming your vision into a stunning digital reality. Our team combines innovative design with robust technical expertise to create websites, mobile apps, and custom software that not only look great but also perform flawlessly.
+      </p>
+      <p>
+        Whether you're a startup looking to make a bold first impression or an established business seeking to modernize your digital presence, our advanced tools and creative approach will help you stand out.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">Empowering your vision with creative & digital solutions</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-paint-brush service-icon"></i>
+          <h3>Creative Design</h3>
+          <p>Engaging visuals and layouts tailored to tell your brand story effectively.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-laptop-code service-icon"></i>
+          <h3>Web Development</h3>
+          <p>Responsive, fast, and modern websites that work seamlessly on all devices.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-bullhorn service-icon"></i>
+          <h3>Digital Marketing</h3>
+          <p>Targeted campaigns to increase brand awareness and drive quality leads.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-chart-line service-icon"></i>
+          <h3>SEO Optimization</h3>
+          <p>Improve search rankings, boost visibility, and attract more organic traffic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- scroll banner -->
+  <section class="advanced-marquee">
+    <div class="marquee-row left">
+      <div class="marquee-group">
+        <span> Website Design </span>
+        <span> Entrepreneurship </span>
+        <span> Coding </span>
+        <span> Developer </span>
+        <span> Artificial Intelligence </span>
+        <span> Machine Learning </span>
+        <span> Problem Solving </span>
+      </div>
+      <div class="marquee-group" aria-hidden="true">
+        <span> Website Design </span>
+        <span> Entrepreneurship </span>
+        <span> Coding </span>
+        <span> Developer </span>
+        <span> Artificial Intelligence </span>
+        <span> Machine Learning </span>
+        <span> Problem Solving </span>
+      </div>
+    </div>
+
+    <div class="marquee-row right">
+      <div class="marquee-group">
+        <span> UI/UX Design </span>
+        <span> Git </span>
+        <span> Creation </span>
+        <span> LinkedIN </span>
+        <span> Personal Branding </span>
+      </div>
+      <div class="marquee-group" aria-hidden="true">
+        <span> UI/UX Design </span>
+        <span> Git </span>
+        <span> Creation </span>
+        <span> LinkedIN </span>
+        <span> Personal Branding </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Modern Footer -->
+  <footer class="modern-footer">
+    <style>
+      .modern-footer {
+        background: radial-gradient(circle at top left, #d72638 0%, #941c29 100%);
+        color: white;
+        padding: 60px 20px 30px;
+        border-radius: 60px 60px 0 0;
+        box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.15);
+        font-family: 'Segoe UI', sans-serif;
+      }
+      .footer-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 40px;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .footer-brand h2 { font-size: 1.6rem; margin-bottom: 10px; font-weight: bold; }
+      .footer-brand p { font-size: 0.95rem; opacity: 0.9; line-height: 1.4; }
+      .footer-links h3, .footer-contact h3, .footer-newsletter h3 { font-size: 1.1rem; font-weight: bold; margin-bottom: 10px; }
+      .footer-links a { display: block; color: white; text-decoration: none; font-size: 0.95rem; margin-bottom: 6px; transition: color 0.3s ease; }
+      .footer-links a:hover { color: #ffcbcb; }
+      .footer-contact p { font-size: 0.95rem; margin-bottom: 6px; }
+      .footer-contact i { color: #ffcbcb; margin-right: 8px; }
+      .newsletter-form { display: flex; background: white; border-radius: 30px; overflow: hidden; max-width: 300px; }
+      .newsletter-form input { border: none; padding: 10px 15px; flex: 1; outline: none; font-size: 0.95rem; }
+      .newsletter-form button { background: #d72638; border: none; padding: 0 16px; cursor: pointer; color: white; font-size: 1rem; transition: background 0.3s ease; }
+      .newsletter-form button:hover { background: #b81f2e; }
+      .footer-socials { text-align: center; margin-top: 20px; }
+      .footer-socials a { display: inline-block; color: white; font-size: 1.3rem; margin: 0 8px; transition: transform 0.3s ease, color 0.3s ease; }
+      .footer-socials a:hover { transform: scale(1.2); color: #ffcbcb; }
+      .footer-bottom { margin-top: 30px; text-align: center; font-size: 0.85rem; opacity: 0.8; border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 15px; }
+      @media (max-width: 768px) {
+        .newsletter-form { max-width: 100%; }
+        .footer-container { text-align: center; }
+        .footer-links a { display: inline-block; margin: 4px 8px; }
+      }
+    </style>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>PIXEL AGENCY</h2>
+        <p>Crafting bold, user-focused digital experiences that help your brand shine in the digital world.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#Works">Works</a>
+        <a href="#">About Us</a>
+        <a href="#">Connect</a>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-envelope"></i> info@pixelagency.com</p>
+        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Subscribe</h3>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+          <input type="email" placeholder="Your Email" required>
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-socials">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Pixel Agency. Designed with ❤️ by the Pixel Team.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+
